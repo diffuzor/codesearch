@@ -17,12 +17,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/junkblocker/codesearch/index"
+	"github.com/diffuzor/codesearch/index"
 )
 
 const (
 	DEFAULT_MAX_FILE_LENGTH             = 1 << 30
-	DEFAULT_MAX_LINE_LENGTH             = 2000
+	DEFAULT_MAX_LINE_LENGTH             = 5000
 	DEFAULT_MAX_TEXT_TRIGRAMS           = 30000
 	DEFAULT_MAX_INVALID_UTF8_PERCENTAGE = 0.1
 )

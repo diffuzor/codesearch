@@ -14,7 +14,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/junkblocker/codesearch/sparse"
+	"github.com/diffuzor/codesearch/sparse"
 )
 
 // Index writing.  See read.go for details of on-disk format.
@@ -75,7 +75,7 @@ func Create(file string) *IndexWriter {
 		post:                make([]postEntry, 0, npost),
 		inbuf:               make([]byte, 16384),
 		MaxFileLen:          1 << 30,
-		MaxLineLen:          2000,
+		MaxLineLen:          5000,
 		MaxTextTrigrams:     20000,
 		MaxInvalidUTF8Ratio: 0.0,
 	}

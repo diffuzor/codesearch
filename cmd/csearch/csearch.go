@@ -18,8 +18,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/junkblocker/codesearch/index"
-	"github.com/junkblocker/codesearch/regexp"
+	"github.com/diffuzor/codesearch/index"
+	"github.com/diffuzor/codesearch/regexp"
 )
 
 var usageMessage = `usage: csearch [options] regexp

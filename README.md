@@ -2,7 +2,7 @@
 
 ## Prebuilt binaries for this fork
 
-* New releases [https://github.com/junkblocker/codesearch/releases](https://github.com/junkblocker/codesearch/releases)
+* New releases [https://github.com/diffuzor/codesearch/releases](https://github.com/diffuzor/codesearch/releases)
 
 ## Installing this fork from source
 
@@ -10,14 +10,14 @@ With Go 1.16 or newer
 
 ``` shell
 cd /
-go install github.com/junkblocker/codesearch/cmd/...@latest
+go install github.com/diffuzor/codesearch/cmd/...@latest
 ```
 
 ## Historical content
 
-* Old releases [https://github.com/junkblocker/codesearch-pre-github/releases](https://github.com/junkblocker/codesearch-pre-github/releases)
+* Old releases [https://github.com/diffuzor/codesearch-pre-github/releases](https://github.com/junkblocker/codesearch-pre-github/releases)
 
-* Old fork pre-"Google on Github" days [https://github.com/junkblocker/codesearch-pre-github](https://github.com/junkblocker/codesearch-pre-github)
+* Old fork pre-"Google on Github" days [https://github.com/diffuzor/codesearch-pre-github](https://github.com/junkblocker/codesearch-pre-github)
 
 * Original Google codesearch README extract
 
