@@ -130,8 +130,8 @@ func makePostEntry(trigram uint32, fileid int) postEntry {
 // or if it contains more than maxTextTrigrams distinct trigrams.
 const (
 	maxFileLen      = 1 << 30
-	maxLineLen      = 2000
-	maxTextTrigrams = 20000
+	maxLineLen      = 5000
+	maxTextTrigrams = 30000
 )
 
 // AddRoots adds the given roots to the index's list of roots.
