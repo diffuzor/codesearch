@@ -250,12 +250,13 @@ func (ix *IndexWriter) add(name string, f io.Reader) error {
 			}
 			return nil
 		}
-		if !validUTF8((tv>>8)&0xFF, tv&0xFF) {
-			if ix.LogSkip {
-				log.Printf("%s: invalid UTF-8, ignoring\n", name)
-			}
-			return nil
-		}
+		//
+		// if !validUTF8((tv>>8)&0xFF, tv&0xFF) {
+		// 	if ix.LogSkip {
+		// 		log.Printf("%s: invalid UTF-8, ignoring\n", name)
+		// 	}
+		// 	return nil
+		// }
 		if n > maxFileLen {
 			if ix.LogSkip {
 				log.Printf("%s: too long, ignoring\n", name)
