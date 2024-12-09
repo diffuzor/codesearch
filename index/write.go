@@ -244,12 +244,12 @@ func (ix *IndexWriter) add(name string, f io.Reader) error {
 		if n++; n >= 3 {
 			ix.trigram.Add(tv)
 		}
-		if c == 0 {
-			if ix.LogSkip {
-				log.Printf("%s: contains NUL, ignoring\n", name)
-			}
-			return nil
-		}
+		// if c == 0 {
+		// 	if ix.LogSkip {
+		// 		log.Printf("%s: contains NUL, ignoring\n", name)
+		// 	}
+		// 	return nil
+		// }
 		//
 		// if !validUTF8((tv>>8)&0xFF, tv&0xFF) {
 		// 	if ix.LogSkip {
