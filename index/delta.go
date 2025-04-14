@@ -7,6 +7,7 @@ package index
 import (
 	"encoding/binary"
 	"math/bits"
+	"log"
 )
 
 type deltaReader struct {
@@ -70,7 +71,9 @@ func (r *deltaReader) next64() int {
 		nb += r.nb
 		lg -= r.nb
 		if len(r.d) == 0 || nb > 64 {
-			r.ix.corrupt()
+			//r.ix.corrupt()
+			log.Printf("Index corrupt")
+			return 0
 		}
 		r.b = uint64(r.d[0])
 		r.nb = 8

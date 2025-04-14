@@ -4,6 +4,8 @@
 
 package index
 
+
+
 // Index Format
 //
 // An index stored on disk has the format:
@@ -480,7 +482,8 @@ func (r *allPostReader) next() (postEntry, bool) {
 				return 0, false
 			}
 			if len(d) < 3 {
-				log.Fatalf("internal error: invalid temporary file")
+				log.Printf("internal error: invalid temporary file")
+				return 0, false
 			}
 			r.trigram = uint32(d[0])<<16 | uint32(d[1])<<8 | uint32(d[2])
 			d = d[3:]
