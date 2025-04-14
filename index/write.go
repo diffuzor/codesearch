@@ -213,6 +213,10 @@ NoZip:
 }
 
 func (ix *IndexWriter) add(name string, f io.Reader) error {
+	if strings.HasSuffix(name, ".tgz") || strings.HasSuffix(name, ".zstd") {
+		log.Printf ("skipping " + name)
+		return nil
+	}
 	ix.trigram.Reset()
 	var (
 		c       = byte(0)
